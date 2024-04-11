@@ -5,15 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My resume</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
  <!-- Wrapper -->
-  <div>
+  <div class="wrapper">
          
     <!-- Main content -->
-    <div>
+    <div class="main-content">
       <!-- My info -->
       <div>
         <h2>Front-End Developer</h2>
@@ -102,42 +108,48 @@
     </div>
 
     <!-- Sidebar -->
-    <aside>
+    <aside class="sidebar">
       <img src="img/Frame 1.png" alt="My photo" width="370">
 
-      <!-- Contacts -->
-      <div>
-        <h3>Contacts</h3>
-          <p>C: <a href="tel:+388888888888">+38 888 888 88 88</a></p>
-          <p>E: <a href="t.goitinskiy@gmail.com">t.goitinskiy@gmail.com</a></p>
-      </div>
+      <div class="sidebar-content">
+        <!-- Contacts -->
+        <div class="contacts-container">
+          <h3 class="contacts-title">Contacts</h3>
+            <p class="contacts-item">
+              <span class="contacts-type">C:</span> 
+              <a class="contacts-link" href="tel:+388888888888">+38 888 888 88 88</a>
+            </p>
+            <p class="contacts-item">
+              <span class="contacts-type">E:</span>
+              <a class="contacts-link" href="t.goitinskiy@gmail.com">t.goitinskiy@gmail.com</a>
+            </p>
+        </div>
             
-      <!-- Tech skils -->
-      <div>
-        <h3>Tech Skills</h3>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>GIT</li>
-            <li>WebPack</li>
-            <li>JavaScript</li>
-            <li>React.js</li>
-            <li>Node.js</li>
-          </ul>
-      </div>
+        <!-- Tech skils -->
+        <div class="skills-container">
+          <h3 class="skills-title">Tech Skills</h3>
+            <ul class="skills-list">
+              <li class="skills-list-item">HTML5</li>
+              <li class="skills-list-item">CSS3</li>
+              <li class="skills-list-item">GIT</li>
+              <li class="skills-list-item">WebPack</li>
+              <li class="skills-list-item">JavaScript</li>
+              <li class="skills-list-item">React.js</li>
+              <li class="skills-list-item">Node.js</li>
+            </ul>
+        </div>
         
-      <!-- Soft skils -->
-      <div>
-        <h3>Soft Skills</h3>
-          <ul>
-            <li>Scrum</li>
-            <li>Agile</li>
-            <li>GIT</li>
-            <li>Teamwork</li>
-          </ul>
+        <!-- Soft skils -->
+        <div class="skills-container">
+          <h3 class="skills-title">Soft Skills</h3>
+            <ul class="skills-list">
+              <li class="skills-list-item">Scrum</li>
+              <li class="skills-list-item">Agile</li>
+              <li class="skills-list-item">GIT</li>
+              <li class="skills-list-item">Teamwork</li>
+            </ul>
+        </div>
       </div>
-
     </aside>
   </div>
 </body>
-
